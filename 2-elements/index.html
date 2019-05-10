@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practicing Flex-Box</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">Practicing Flex-box</h1>
+      <h2 class="title">Flex-Order</h2>
+      <p class="paragraph">
+        By default, flex items are laid out in the source order. However, the
+        order property controls the order in which they appear in the flex
+        container.
+      </p>
+
+      <div class="container1">
+        <section class="section1">
+          <h2>1</h2>
+          <h3 class="section-paragraph">order</h3>
+          <p>
+            Changing the order of elements when shrink the page by using order:
+            integer on each element;
+          </p>
+        </section>
+
+        <section class="section2">
+          <h2>2</h2>
+          <h3 class="section-paragraph">order</h3>
+          <p>
+            Changing the order of elements when shrink the page by using order:
+            integer on each element;
+          </p>
+        </section>
+
+        <section class="section3">
+          <h2>3</h2>
+          <h3 class="section-paragraph">order</h3>
+          <p>
+            Changing the order of elements when shrink the page by using order:
+            integer on each element;
+          </p>
+        </section>
+      </div>
+
+      <h2 class="title">Flex-Grow</h2>
+      <p class="paragraph">
+        This defines the ability for a flex item to grow if necessary. It
+        accepts a unitless value that serves as a proportion. If all items have
+        flex-grow set to 1, the remaining space in the container will be
+        distributed equally to all children. If one of the children has a value
+        of 2, the remaining space would take up twice as much space as the
+        others (or it will try to, at least).
+      </p>
+      <p class="paragraph">
+        <em>*flex-basis is required on the element</em>
+      </p>
+      <div class="container2">
+        <section class="section1">
+          <h2>Flex-grow: 1</h2>
+          <p>
+            flex-basis: 0;
+          </p>
+        </section>
+
+        <section class="section2">
+          <h2>Flex-grow: 2</h2>
+          <p>
+            flex-basis: 0;
+          </p>
+        </section>
+
+        <section class="section3">
+          <h2>Flex-grow: 1</h2>
+          <p>
+            flex-basis: 0;
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
