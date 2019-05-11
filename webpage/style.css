@@ -8,41 +8,52 @@
   max-width: 960px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
+.image {
+  width: 300px;
+  height: 300px;
+}
 
 /* header */
+
 .menu {
-  padding: 20px 0;
+  background: black;
+  padding: 40px 0;
+}
+
+.menu .container {
+  flex-wrap: nowrap;
 }
 
 .menu-nav {
-  flex: 1;
+  order: 2;
   align-self: center;
+  margin-left: 50px;
 }
 
 .menu-nav ul {
   list-style: none;
   float: right;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-nav a {
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
   text-decoration: none;
   font-size: 1.5em;
 }
 
 .menu-nav a:hover {
-  font-size: 1.7em;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
+  background: white;
 }
 
 .menu-logo {
   padding: 10px;
+  order: 1;
 }
 
 /* introduction */
@@ -50,7 +61,7 @@
 .introduction h1 {
   padding-top: 120px;
   flex: 1;
-  font-size: 5em;
+  font-size: 4em;
   color: blue;
   text-transform: uppercase;
   text-align: center;
@@ -65,18 +76,20 @@
 .superman {
   margin: 30px 0;
 }
+
 .superman .image {
- margin: 0px 20px;
+  order: 1;
 }
 
-.superman .presentation { 
+.superman .presentation {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;  
+  font-size: 24px;
+  order: 2;
 }
 
 /* batman */
 .batman {
-  flex: 1;
+  margin: 30px 0;
 }
 
 /* about */
@@ -89,4 +102,45 @@
   margin: 20px auto;
   font-size: 1.5em;
   text-align: justify;
+}
+
+.teste {
+  margin: 1400px auto;
+  background: blue;
+  width: 100%;
+  height: 600px;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 774px) and (max-width: 959px) {
+  .menu-nav a {
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .menu-nav {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 773px) {
+  .menu .container {
+    flex-direction: column;
+  }
+
+  .menu-nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .menu-nav li {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .menu-logo {
+    margin: 0 auto;
+   }
+   
 }
