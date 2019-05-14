@@ -12,24 +12,28 @@
 <body>
   <header class="menu">
     <div class="container">
-      <a class="menu-logo" href="#"><img src="imgs/logo.png" alt="logo"></a>
-      <nav class="menu-nav">
+      <a class="menu-logo" id="logo"><img src="imgs/logo.png" alt="logo"></a>
+      <nav class="menu-nav" id="menuNav">
         <ul>
-          <li><a href="#">Superman</a></li>
-          <li><a href="#">Batman</a></li>
-          <li><a href="#">Wonder Woman</a></li>
-          <li><a href="#">Aquaman</a></li>
+          <li><a href="#superman">Superman</a></li>
+          <li><a href="#batman">Batman</a></li>
+          <li><a href="#wonderwoman">Wonder Woman</a></li>
+          <li><a href="#aquaman">Aquaman</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <div class="button">
+    <a href="#logo">back</a>
+  </div>
 
   <section class="introduction container">
     <h1>dc heroes</h1>
     <img src="imgs/fundo.gif">
   </section>
   
-  <section class="superman container">
+  <section class="superman container" id="superman">
     <div class="image">
       <img src="imgs/superman.png" alt="Superman">
     </div>
@@ -40,11 +44,11 @@
         for
         truth, justice, and the American way.
       </p>
-    </div>
+    </div>  
   </section>
 
-  <section class="batman container">
-    <div>
+  <section class="batman container" id="batman">
+    <div class="presentation">
       <h2>Batman</h2>
       <p>
         In the name of his murdered parents, Bruce Wayne wages eternal war on the criminals of Gotham City. He is
@@ -56,11 +60,11 @@
     </div>
   </section>
  
-  <section class="wonderwoman container">
+  <section class="wonderwoman container" id="wonderwoman">
     <div class="image">
       <img src="imgs/wwoman.jpg" alt="Wonder Woman">
     </div>
-    <div>
+    <div class="presentation">
       <h2>Wonder Woman</h2>
       <p>
         Beautiful as Aphrodite, wise as Athena, swifter than Hermes, and stronger than Hercules, Princess Diana of
@@ -69,9 +73,9 @@
     </div>
   </section>
 
-  <section class="aquaman container">
-    <div>
-      <h1>Aquaman</h1>
+  <section class="aquaman container" id="aquaman">
+    <div class="presentation">
+      <h2>Aquaman</h2>
       <p>The son of a lighthouse keeper and an Atlantean queen, Arthur Curry is the bridge between the surface world and
         his tumultuous realm of the sea.</p>
     </div>
@@ -80,8 +84,10 @@
     </div>
   </section>
 
+  <footer>
+    <p>&copy Marcelo Vqvd</p>
+  </footer>
 
-
-
+<script src="script.js"></script>
 </body>
 </html>
