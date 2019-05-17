@@ -24,8 +24,7 @@ h2 {
   height: 400px;
 }
 
-.button {
-  background: blue;
+.button {  
   width: 50px;
   height: 50px;
   text-transform: uppercase;
@@ -38,8 +37,14 @@ h2 {
 }
 
 .button a {
-  color: #fff;
+  padding: 20px;
+  color: rgb(140, 207, 31);
   text-decoration: none;
+}
+
+.button a:hover {
+ background: #000;
+ color: #fff;
 }
 
 /* header */
@@ -76,7 +81,9 @@ h2 {
 }
 
 .menu-nav a:hover {
-  background: white;
+  color: #fff;
+  background: rgb(140, 207, 31);
+  border-radius: 10px;
 }
 
 .menu-logo {
@@ -98,6 +105,11 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
+
+.introduction h1:hover {
+  color: rgb(140, 207, 31);
+}
+
 
 .introduction img {
  margin: 0 auto;  
